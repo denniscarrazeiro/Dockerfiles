@@ -2,6 +2,8 @@ FROM ubuntu:16.04
 
 MAINTAINER Dennis Carrazeiro <dennis.carrazeiro@gmail.com>
 
+ENV MYSQL_DATABASE=fini_promo_pegapremio
+
 RUN apt-get update \
     && apt-get -q -y dist-upgrade \
     && DEBIAN_FRONTEND=noninteractive \

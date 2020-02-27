@@ -1,1 +1,1 @@
-docker run -d -p 8080:80 -p 3307:3306 -v ${PWD}/application/apache2/www/app:/var/www/app -v ${PWD}/application/apache2/sites-available:/etc/apache2/sites-available dennis/lamp:1.0
+docker run -d -p 8080:80 -p 3307:3306 -v ${PWD}/application/apache2/www/app:/var/www/app -v ${PWD}/application/apache2/sites-available:/etc/apache2/sites-available -v ${PWD}/application/mysql/mariadb-backup:/opt/mariadb-backup dennis/lamp:1.0
